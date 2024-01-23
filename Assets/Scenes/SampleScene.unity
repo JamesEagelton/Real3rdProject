@@ -456,7 +456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f0e99a80c2fd1408feb386f0dd549c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cameraholder: {fileID: 882216935}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +472,7 @@ MonoBehaviour:
   orientation: {fileID: 67695387}
   cameraholder: {fileID: 882216935}
   mainCam: {fileID: 963194225}
-  sensY: 100
+  sensY: 0
 --- !u!1 &1541200788
 GameObject:
   m_ObjectHideFlags: 0
