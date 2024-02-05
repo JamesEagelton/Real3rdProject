@@ -35,7 +35,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     Rigidbody rb;
 
-    public Transform  maincamera;
+    public Camera  maincamera;
     
 
     private void Start()
@@ -61,6 +61,30 @@ public class PlayerMovementTutorial : MonoBehaviour
             rb.drag = 0;
 
         this.transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+
+        if (Input.GetMouseButtonDown(0)) 
+        {
+            Ray ray = maincamera.ViewportPointToRay(new Vector3(.5f, .5f,0f));
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Debug.Log("Im looking at " + hit.transform.name);
+                if (hit.transform.tag == "enemy")
+                {
+                    hit.transform.parent.GetComponent<enemycontroller>().takedamage();
+                    GetComponent<AudioSource>().Stop();
+                    GetComponent<AudioSource>().Play();
+
+
+                }
+            }
+            else 
+            {
+                Debug.Log("NOTHING");
+            }
+            
+        }
     }
 
     private void FixedUpdate()
@@ -121,4 +145,5 @@ public class PlayerMovementTutorial : MonoBehaviour
     {
         readyToJump = true;
     }
+
 }
