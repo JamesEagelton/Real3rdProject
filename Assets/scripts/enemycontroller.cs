@@ -10,16 +10,17 @@ public class enemycontroller : MonoBehaviour
     public GameObject hiteffect;
     public int total;
     public int count = 0;
-    public Text couning21;
-    public Text text;
     public int value;
+    public GameObject effectpoint;
+    public UIEvent uIEvent;
     
 
 
     void Start()
     {
-        string valuestring = value.ToString();
-        text.text = valuestring;
+        
+        
+        
     }
 
 
@@ -28,7 +29,7 @@ public class enemycontroller : MonoBehaviour
         
         
 
-        couning21.text = count + " / " + total;
+        
     }
 
     public void takedamage() 
@@ -38,7 +39,8 @@ public class enemycontroller : MonoBehaviour
         if (health <= 0) 
         {
             Destroy(gameObject);
-            Instantiate(hiteffect, transform.position, Quaternion.identity);
+            Instantiate(hiteffect, effectpoint.transform.position, effectpoint.transform.rotation);
+            uIEvent.Appear();
             
 
 
