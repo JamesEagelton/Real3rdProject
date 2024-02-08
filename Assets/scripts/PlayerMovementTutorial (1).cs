@@ -32,6 +32,8 @@ public class PlayerMovementTutorial : MonoBehaviour
     float verticalInput;
 
     Vector3 moveDirection;
+    public GameObject beam;
+    public GameObject cross;
 
     Rigidbody rb;
 
@@ -64,8 +66,11 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) 
         {
+            Instantiate(beam, cross.transform.position, cross.transform.rotation);
             Ray ray = maincamera.ViewportPointToRay(new Vector3(.5f, .5f,0f));
             RaycastHit hit;
+            
+
 
             if (Physics.Raycast(ray, out hit))
             {

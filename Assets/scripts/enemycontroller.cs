@@ -12,7 +12,9 @@ public class enemycontroller : MonoBehaviour
     public int count = 0;
     public int value;
     public GameObject effectpoint;
-    public UIEvent uIEvent;
+    
+    public scorescript score;
+    public float scoreadded;
     
 
 
@@ -38,9 +40,11 @@ public class enemycontroller : MonoBehaviour
         health--;
         if (health <= 0) 
         {
+            score.score = +scoreadded;
             Destroy(gameObject);
             Instantiate(hiteffect, effectpoint.transform.position, effectpoint.transform.rotation);
-            uIEvent.Appear();
+            
+            
             
 
 

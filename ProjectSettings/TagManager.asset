@@ -12,7 +12,7 @@ TagManager:
   - ground
   - Water
   - UI
-  - 
+  - hands
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: foreground
+    uniqueID: 1854916953
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
