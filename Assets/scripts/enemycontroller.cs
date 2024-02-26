@@ -40,7 +40,7 @@ public class enemycontroller : MonoBehaviour
         health--;
         if (health <= 0) 
         {
-            score.score = +scoreadded;
+            score.scorebar.value = score.scorebar.value + scoreadded;
             Destroy(gameObject);
             Instantiate(hiteffect, effectpoint.transform.position, effectpoint.transform.rotation);
             
@@ -52,10 +52,7 @@ public class enemycontroller : MonoBehaviour
         }
     
     }
-    private void OnDestroy()
-    {
-        count = count + value;
-    }
+   
 }   
 
 

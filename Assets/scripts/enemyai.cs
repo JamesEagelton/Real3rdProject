@@ -9,6 +9,10 @@ public class enemyai : MonoBehaviour
     private Transform playersTransform;
     private NavMeshAgent enemynavMeshAgent;
 
+   
+    
+    
+    
     private void Start()
     {
         enemyawareness = GetComponent<enemyawareness>();
@@ -18,6 +22,10 @@ public class enemyai : MonoBehaviour
 
     private void Update()
     {
-        enemynavMeshAgent.SetDestination(playersTransform.position);
+        
+        if (enemyawareness.isAggro == true) 
+        { 
+          enemynavMeshAgent.SetDestination(playersTransform.position);
+        }
     }
 }

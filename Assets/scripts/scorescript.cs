@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,27 +8,38 @@ public class scorescript : MonoBehaviour
 {
     // Start is called before the first frame update
     public Slider scorebar;
-    public float score;
+   
     public float scoredecay;
     public int playerhealth = 3;
-    float originalscore;
+    public float originalscore;
     public UIEvent uIEvent;
+   
+    public Text scoretext;
+    string scorestring;
 
     private void Start()
     {
-      originalscore = score;
+        scorebar.value = originalscore;
     }
 
     void Update()
     {
-        scorebar.value = score;
-        score = score - scoredecay;
 
-        if (score < 0.2 || score > 0.8) 
+        scorebar.value = scorebar.value - scoredecay;
+        
+
+        if (scorebar.value < 200 || scorebar.value > 800) 
         {
             playerhealth--;
-            score = originalscore;
+            scorebar.value = originalscore;
             uIEvent.Appear();
         }
+
+        
+        
+        
+        scorestring = scorebar.value.ToString();
+        scoretext.text = scorestring;
     }
 }
+

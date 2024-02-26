@@ -40,7 +40,8 @@ public class UIEvent : MonoBehaviour
     public void Appear()
     {
         StartCoroutine(FadeInAndOutCoroutine(fadeInTime, fadeOutTime));
-        // Debug.Log("Text appears and disappears");
+        Debug.Log("Text appears and disappears");
+        
     }
 
     IEnumerator FadeInAndOutCoroutine(float fadeInTime, float fadeOutTime)

@@ -10,10 +10,20 @@ public class enemyawareness : MonoBehaviour
     private void Update()
     {
         
+        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        isAggro = true;
+        if (other.gameObject.tag == "Player") 
+        { 
+        
+            isAggro = true;
+        
+        }
+        
     }
+
+    
 }

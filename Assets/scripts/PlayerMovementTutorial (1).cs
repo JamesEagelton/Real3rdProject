@@ -12,6 +12,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     public float jumpForce;
     public float jumpCooldown;
+    public float beamCooldown;
     public float airMultiplier;
     bool readyToJump;
 
@@ -25,6 +26,7 @@ public class PlayerMovementTutorial : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     bool grounded;
+    bool beamready;
 
     public Transform orientation;
 
@@ -38,6 +40,8 @@ public class PlayerMovementTutorial : MonoBehaviour
     Rigidbody rb;
 
     public Camera  maincamera;
+
+    public AudioSource beamnoise;
     
 
     private void Start()
@@ -46,6 +50,7 @@ public class PlayerMovementTutorial : MonoBehaviour
         rb.freezeRotation = true;
 
         readyToJump = true;
+        beamready = true;
     }
 
     private void Update()
@@ -64,32 +69,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         this.transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
 
-        if (Input.GetMouseButtonDown(0)) 
-        {
-            Instantiate(beam, cross.transform.position, cross.transform.rotation);
-            Ray ray = maincamera.ViewportPointToRay(new Vector3(.5f, .5f,0f));
-            RaycastHit hit;
-            
-
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                Debug.Log("Im looking at " + hit.transform.name);
-                if (hit.transform.tag == "enemy")
-                {
-                    hit.transform.parent.GetComponent<enemycontroller>().takedamage();
-                    GetComponent<AudioSource>().Stop();
-                    GetComponent<AudioSource>().Play();
-
-
-                }
-            }
-            else 
-            {
-                Debug.Log("NOTHING");
-            }
-            
-        }
+        
     }
 
     private void FixedUpdate()
@@ -110,6 +90,16 @@ public class PlayerMovementTutorial : MonoBehaviour
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
+        }
+
+        if(Input.GetMouseButtonDown(0) && beamready) 
+        { 
+            beamready = false;
+
+            Beam();
+
+            Invoke(nameof(ResetBeam), beamCooldown);
+        
         }
     }
 
@@ -151,4 +141,37 @@ public class PlayerMovementTutorial : MonoBehaviour
         readyToJump = true;
     }
 
+    private void ResetBeam() 
+    { 
+        beamready = true;
+    }
+
+    private void Beam()
+    {
+        Instantiate(beam, cross.transform.position, cross.transform.rotation);
+        Ray ray = maincamera.ViewportPointToRay(new Vector3(.5f, .5f, 0f));
+        RaycastHit hit;
+        beamnoise.Stop();
+        beamnoise.Play();
+
+
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Debug.Log("Im looking at " + hit.transform.name);
+            if (hit.transform.tag == "enemy")
+            {
+                hit.transform.parent.GetComponent<enemycontroller>().takedamage();
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().Play();
+
+
+            }
+        }
+        else
+        {
+            Debug.Log("NOTHING");
+        }
+
+    }
 }
