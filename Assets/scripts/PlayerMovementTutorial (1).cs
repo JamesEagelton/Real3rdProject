@@ -7,7 +7,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed;
-
+    public Animator beamlocation;
     public float groundDrag;
 
     public float jumpForce;
@@ -95,6 +95,7 @@ public class PlayerMovementTutorial : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && beamready) 
         { 
             beamready = false;
+            beamlocation.SetTrigger("Fire");
 
             Beam();
 
@@ -148,7 +149,8 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     private void Beam()
     {
-        Instantiate(beam, cross.transform.position, cross.transform.rotation);
+        
+        
         Ray ray = maincamera.ViewportPointToRay(new Vector3(.5f, .5f, 0f));
         RaycastHit hit;
         beamnoise.Stop();

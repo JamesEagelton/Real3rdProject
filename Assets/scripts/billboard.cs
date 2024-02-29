@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class billboard : MonoBehaviour
 {
-
-    public Transform camTransform;
-
+    public Transform player;
+    
 
 
     void Update()
 
     {
-
-        transform.rotation = camTransform.rotation;
-
+        this.transform.LookAt(player);
+       
     }
 
 }

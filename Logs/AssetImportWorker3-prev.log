@@ -15,7 +15,7 @@ C:/Users/542353/Real3rdProject
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-62024
+60961
 -job-worker-count
 5
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/542353/Real3rdProject
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22728] Host "[IP] 172.27.172.149 [Port] 0 [Flags] 2 [Guid] 1766278609 [EditorId] 1766278609 [Version] 1048832 [Id] WindowsEditor(7,L-CB346-21269) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [22728] Host "[IP] 172.27.172.149 [Port] 0 [Flags] 2 [Guid] 1766278609 [EditorId] 1766278609 [Version] 1048832 [Id] WindowsEditor(7,L-CB346-21269) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17224] Host "[IP] 172.27.172.149 [Port] 0 [Flags] 2 [Guid] 2476039294 [EditorId] 2476039294 [Version] 1048832 [Id] WindowsEditor(7,L-CB346-21269) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [17224] Host "[IP] 172.27.172.149 [Port] 0 [Flags] 2 [Guid] 2476039294 [EditorId] 2476039294 [Version] 1048832 [Id] WindowsEditor(7,L-CB346-21269) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 239.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.5f1 (381b4941466e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.5f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56928
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -94,42 +94,42 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007591 seconds.
-- Loaded All Assemblies, in  1.689 seconds
+Registered in 0.009287 seconds.
+- Loaded All Assemblies, in  0.705 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.439 seconds
-Domain Reload Profiling: 2125ms
-	BeginReloadAssembly (165ms)
+- Finished resetting the current domain, in  0.583 seconds
+Domain Reload Profiling: 1284ms
+	BeginReloadAssembly (241ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (828ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (618ms)
-		LoadAssemblies (157ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (276ms)
+		LoadAssemblies (234ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (615ms)
-			TypeCache.Refresh (613ms)
-				TypeCache.ScanAssembly (596ms)
+		AnalyzeDomain (272ms)
+			TypeCache.Refresh (269ms)
+				TypeCache.ScanAssembly (248ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (439ms)
+	FinalizeReload (583ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (376ms)
+		SetupLoadedEditorAssemblies (504ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (204ms)
-			ProcessInitializeOnLoadMethodAttributes (145ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (11ms)
+			ProcessInitializeOnLoadAttributes (389ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -152,8 +152,8 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image C:\Users\542353\Real3rdProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\542353\Real3rdProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.304 seconds
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.809 seconds
+Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
@@ -176,48 +176,1040 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.136 seconds
-Domain Reload Profiling: 2433ms
-	BeginReloadAssembly (684ms)
+- Finished resetting the current domain, in  2.458 seconds
+Domain Reload Profiling: 4251ms
+	BeginReloadAssembly (614ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (517ms)
-		LoadAssemblies (383ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (1004ms)
+		LoadAssemblies (765ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (245ms)
-			TypeCache.Refresh (200ms)
-				TypeCache.ScanAssembly (184ms)
-			BuildScriptInfoCaches (31ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1137ms)
+		AnalyzeDomain (464ms)
+			TypeCache.Refresh (374ms)
+				TypeCache.ScanAssembly (339ms)
+			BuildScriptInfoCaches (61ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (2458ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (950ms)
+		SetupLoadedEditorAssemblies (2093ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (833ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (170ms)
+			ProcessInitializeOnLoadAttributes (1792ms)
+			ProcessInitializeOnLoadMethodAttributes (92ms)
+			AfterProcessingInitializeOnLoad (19ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 131 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5422 unused Assets / (5.0 MB). Loaded Objects now: 6051.
-Memory consumption went from 173.3 MB to 168.3 MB.
-Total: 20.748400 ms (FindLiveObjects: 1.086400 ms CreateObjectMapping: 0.292000 ms MarkObjects: 16.102900 ms  DeleteObjects: 3.265600 ms)
+Unloading 5422 unused Assets / (4.1 MB). Loaded Objects now: 6051.
+Memory consumption went from 171.2 MB to 167.1 MB.
+Total: 31.163800 ms (FindLiveObjects: 1.294600 ms CreateObjectMapping: 0.476300 ms MarkObjects: 25.022600 ms  DeleteObjects: 4.368500 ms)
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+========================================================================
+Received Import Request.
+  Time since last request: 79919.761712 seconds.
+  path: Assets/MedievalTavernPack/Material/Architecture/Wall_door_02_cast.mat
+  artifactKey: Guid(549eab2d7f335fc4e98b65064a2904de) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Architecture/Wall_door_02_cast.mat using Guid(549eab2d7f335fc4e98b65064a2904de) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '47fd6da8fdcd1c8a0d9de1fd95a50e83') in 0.3536515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Laterns and candles/textures/Lattice [Specular].tif
+  artifactKey: Guid(a19f6398a10e9be489c7ccc6400c7877) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/Lattice [Specular].tif using Guid(a19f6398a10e9be489c7ccc6400c7877) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4fb30b227bac00ba1c9a8695602c206e') in 0.0886129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Hocker/Worn wooden crate/Box/Materials/Textures/box_low_DefaultMaterial_Roughness.png
+  artifactKey: Guid(33fe9d017f0ef9649b43a9b7babb9797) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Hocker/Worn wooden crate/Box/Materials/Textures/box_low_DefaultMaterial_Roughness.png using Guid(33fe9d017f0ef9649b43a9b7babb9797) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd16254f7832c727d4efb2fd1cec5f131') in 0.0568063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/MedievalTavernPack/Material/Furniture/Bar_02_corner.mat
+  artifactKey: Guid(e4682de31fb16624f8cde2ec97c843f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Furniture/Bar_02_corner.mat using Guid(e4682de31fb16624f8cde2ec97c843f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6caaafc39032c88f1998e573faa7dce2') in 0.0405248 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Laterns and candles/Meshes/candlestick.fbx
+  artifactKey: Guid(084da560759559f4995810207469e30a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Meshes/candlestick.fbx using Guid(084da560759559f4995810207469e30a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fe7d9f4f3c3f174ec87bc50a9ed6fb69') in 0.0675139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/floor_02_ALBEDO.png
+  artifactKey: Guid(a34c3b58939726f4d802b5a509411039) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/floor_02_ALBEDO.png using Guid(a34c3b58939726f4d802b5a509411039) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '279969543778646dd70b7aafb158c3a7') in 0.0385499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset
+  artifactKey: Guid(69a525efa7e6472eab268f6ea605f06e) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset using Guid(69a525efa7e6472eab268f6ea605f06e) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aaf25b427ec1445a6cdae9cacca4bc6f') in 0.0292156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity
+  artifactKey: Guid(2ac8cf212df6445e8aebbe3cb832e993) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity using Guid(2ac8cf212df6445e8aebbe3cb832e993) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Opening scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity additively'
+Loaded scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity'
+	Deserialize:            49.749 ms
+	Integration:            43.998 ms
+	Integration of assets:  2.139 ms
+	Thread Wait Time:       0.004 ms
+	Total Operation Time:   95.889 ms
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a559356a288339b03da6d6e29e66c8eb') in 0.1385614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003282 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity
+  artifactKey: Guid(349f38d3606449708c7340d26740e1e2) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity using Guid(349f38d3606449708c7340d26740e1e2) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Opening scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity additively'
+Loaded scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity'
+	Deserialize:            39.417 ms
+	Integration:            21.991 ms
+	Integration of assets:  1.208 ms
+	Thread Wait Time:       1.110 ms
+	Total Operation Time:   63.726 ms
+The method get_fontSharedMaterials was not found on TextMeshPro. This property will not be indexed.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Rendering.Universal.MaterialReferenceBuilder:GetMaterialFromMethod (System.Reflection.MethodInfo,UnityEngine.Object,System.Func`3<string, string, string>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@16.0.5/Editor/Converter/MaterialReferenceBuilder.cs:133)
+UnityEditor.Rendering.Universal.ConversionIndexers:ConversionIndexer (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@16.0.5/Editor/Converter/ConversionIndexers.cs:21)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexCustomGameObjectProperties (string,int,UnityEngine.GameObject)
+UnityEditor.Search.AssetIndexer:IndexObjects (UnityEngine.GameObject[],string,string,string,bool)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@16.0.5/Editor/Converter/MaterialReferenceBuilder.cs Line: 133)
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cd5ff5a0ebb8ec91cf6bf75bdfc8f01c') in 0.1245543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/scripts
+  artifactKey: Guid(6ee7a7c00713df6459813df5ff61e0e7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/scripts using Guid(6ee7a7c00713df6459813df5ff61e0e7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6652acc427e3d29214a0bd1e59e0d227') in 0.0222881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Laterns and candles/Laterns demo.unity
+  artifactKey: Guid(f208d543c07c1a0439a22d2d388fd1f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Laterns demo.unity using Guid(f208d543c07c1a0439a22d2d388fd1f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd7ca1381cb2d15dbd652317592612401') in 0.0342886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/column_02_NORMAL.png
+  artifactKey: Guid(86a4e5165092ae24088e122c7e355d0f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/column_02_NORMAL.png using Guid(86a4e5165092ae24088e122c7e355d0f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7d6f4e1229466af7e6d8cf5aea93fd5c') in 0.0711964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Laterns and candles/Meshes/Materials
+  artifactKey: Guid(6cf9599056454b3488e88936500f487f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Meshes/Materials using Guid(6cf9599056454b3488e88936500f487f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '654f1dff2159c27fbc4ff33153fceb9c') in 0.0208252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MedievalTavernPack/Material/Architecture/Wall_door_01_stone.mat
+  artifactKey: Guid(2949b05de28c2f3419e4329ceeb50e19) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Architecture/Wall_door_01_stone.mat using Guid(2949b05de28c2f3419e4329ceeb50e19) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7eab18fa120eeb7b375d6a9c707ada74') in 0.0470715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Furniture/Lamp_01.prefab
+  artifactKey: Guid(f08e2c9c9d052f74cb0c5789c4aca4f0) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Prefabs/Furniture/Lamp_01.prefab using Guid(f08e2c9c9d052f74cb0c5789c4aca4f0) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7841e8cbe9c660cf422bd3110e2ea631') in 0.0235878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow
+  artifactKey: Guid(9d4b9e3ebe68dd24298bd0ce773fadf8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Unity.VisualScripting.Generated/VisualScripting.Flow using Guid(9d4b9e3ebe68dd24298bd0ce773fadf8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '73c84855a29aba022580c6e987095717') in 0.0599832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/window_02_NORMAL.png
+  artifactKey: Guid(c4a72b5e94feae0408df66f258662795) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/window_02_NORMAL.png using Guid(c4a72b5e94feae0408df66f258662795) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '92b592a2341495b5da348c678a19ee86') in 0.0477666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Ornaments/Axe_01.prefab
+  artifactKey: Guid(5a367ff7fe2957344b0564bf2655256e) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Prefabs/Ornaments/Axe_01.prefab using Guid(5a367ff7fe2957344b0564bf2655256e) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd84be58094545095a370d8c29f59e72d') in 0.0321344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MedievalTavernPack/Meshes/Tableware/jug_01.FBX
+  artifactKey: Guid(0af38530069ec2740a00fbf48041c7f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Meshes/Tableware/jug_01.FBX using Guid(0af38530069ec2740a00fbf48041c7f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a106104ef6ea0513e190bede1210cc50') in 0.0546772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Architecture/Window_02.prefab
+  artifactKey: Guid(070c0634b620a9e4cbce64b57251e911) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Prefabs/Architecture/Window_02.prefab using Guid(070c0634b620a9e4cbce64b57251e911) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bd256357d2450987d2edcd9a70b5722f') in 0.0380381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity
+  artifactKey: Guid(eea2b7206368b444e84fbec4ec32b64a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity using Guid(eea2b7206368b444e84fbec4ec32b64a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Opening scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity additively'
+Loaded scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity'
+	Deserialize:            33.521 ms
+	Integration:            100.328 ms
+	Integration of assets:  2.251 ms
+	Thread Wait Time:       -0.191 ms
+	Total Operation Time:   135.910 ms
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c83f2d77ffdc46ff16ae005e83b128c') in 0.1623439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Hocker/Worn wooden crate/Box/Materials
+  artifactKey: Guid(9ed356dc40a12fc439c359c458c5da6e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Hocker/Worn wooden crate/Box/Materials using Guid(9ed356dc40a12fc439c359c458c5da6e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ba1922572709c8c5bffd549ec14eb35e') in 0.0181513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Laterns and candles/textures/candlestick [Specular].tif
+  artifactKey: Guid(f455c18315cd2a447b8e3224dbc13180) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/candlestick [Specular].tif using Guid(f455c18315cd2a447b8e3224dbc13180) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e1dd34708ec541253dcf89b3aa295091') in 0.0436968 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/MedievalTavernPack/Material/Architecture/Fireplace_01_stone.mat
+  artifactKey: Guid(ecc534cbfa97e6d438a751227e900ead) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Architecture/Fireplace_01_stone.mat using Guid(ecc534cbfa97e6d438a751227e900ead) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8111dbdbc691d734a796e760176c1b35') in 0.0717577 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/wall_frame_01_cast_NORMAL.png
+  artifactKey: Guid(cce356741e8c8c84299fe0263c33e940) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/wall_frame_01_cast_NORMAL.png using Guid(cce356741e8c8c84299fe0263c33e940) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '68edcc69be968b67e0d29d1f30b380d0') in 0.1962666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000680 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Architecture/Column_02.prefab
+  artifactKey: Guid(ac28e6076be495e41b84323f412ac04e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Prefabs/Architecture/Column_02.prefab using Guid(ac28e6076be495e41b84323f412ac04e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd1849bc2d6a51bf06dad85eb4a84ca29') in 0.057564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Laterns and candles/textures/albedo_transparent.psd
+  artifactKey: Guid(ab754629dd160a140bd57bb516736b2a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/albedo_transparent.psd using Guid(ab754629dd160a140bd57bb516736b2a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fc0fb4988042587706b73c7421c4bf10') in 0.0552362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Laterns and candles/textures/CarvedLampPost [Specular].tif
+  artifactKey: Guid(93997d9efb46915458ae8da4dd7c9e8d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/CarvedLampPost [Specular].tif using Guid(93997d9efb46915458ae8da4dd7c9e8d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cd7f97ebd73d3b92747d1b991c126b08') in 0.0504823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000534 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Furniture
+  artifactKey: Guid(bd6e32b86f4b73446912a437d2d8cc3a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Prefabs/Furniture using Guid(bd6e32b86f4b73446912a437d2d8cc3a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9250852ccf92a72d14d696912e042b44') in 0.0358428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Laterns and candles/textures/Candle3 [Specular].tif
+  artifactKey: Guid(93fcb0abb7c119a42a554faef8e44dc2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/Candle3 [Specular].tif using Guid(93fcb0abb7c119a42a554faef8e44dc2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1116521cd1c169d1ce98f7c9ba7f4337') in 0.054941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/MedievalTavernPack/Material/Furniture/Chair_01.mat
+  artifactKey: Guid(9f0636cb7dad2434fb773a7607868a53) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Furniture/Chair_01.mat using Guid(9f0636cb7dad2434fb773a7607868a53) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f4f97fbd52bebaffe9d9117be4d3775e') in 0.0719526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Architecture/Wall_door_02_stone.prefab
+  artifactKey: Guid(f690e5c1212c4aa45950ed64cbe48316) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Prefabs/Architecture/Wall_door_02_stone.prefab using Guid(f690e5c1212c4aa45950ed64cbe48316) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '76010b35e65cdcedb473fd685789dba5') in 0.0559778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Architecture/Fireplace_01_stone.prefab
+  artifactKey: Guid(eb922f2a530310b46ab2d572269f0f72) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Prefabs/Architecture/Fireplace_01_stone.prefab using Guid(eb922f2a530310b46ab2d572269f0f72) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '48c95e1890958061ed3c379e6535f710') in 0.0513691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/window_01_NORMAL.png
+  artifactKey: Guid(d180a19b3cc136a4aabc53e832270009) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/window_01_NORMAL.png using Guid(d180a19b3cc136a4aabc53e832270009) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc874e2a84298cf77bc04aa0f4d73fd5') in 0.0655955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/MedievalTavernPack/Scenes/demo_02.unity
+  artifactKey: Guid(7b0fa8cfd719ae94db0e36c0709ed2d8) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Scenes/demo_02.unity using Guid(7b0fa8cfd719ae94db0e36c0709ed2d8) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Opening scene 'Assets/MedievalTavernPack/Scenes/demo_02.unity additively'
+Loaded scene 'Assets/MedievalTavernPack/Scenes/demo_02.unity'
+	Deserialize:            158.596 ms
+	Integration:            93.713 ms
+	Integration of assets:  0.092 ms
+	Thread Wait Time:       -0.077 ms
+	Total Operation Time:   252.324 ms
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '346bdd526e5b2503c1eb6b8479110a3f') in 0.7353185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 316
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset
+  artifactKey: Guid(479a66fa4b094512a62b0a8e553ad95a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset using Guid(479a66fa4b094512a62b0a8e553ad95a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '07f28fcc48ff997b8dc4c86d04851db8') in 0.0336859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Ornaments/Shield_01.prefab
+  artifactKey: Guid(7412af8416a104d4f98d1c8e99da6e9a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Prefabs/Ornaments/Shield_01.prefab using Guid(7412af8416a104d4f98d1c8e99da6e9a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fe7488a0838b180648119eca76a69218') in 0.0284945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MedievalTavernPack/Textures/Furniture/bar_02_mod_ALBEDO.png
+  artifactKey: Guid(ddd2576aba2dee549860e0d8d6a5758e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Furniture/bar_02_mod_ALBEDO.png using Guid(ddd2576aba2dee549860e0d8d6a5758e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0b353220702a5c55e7b20951e212bb19') in 0.1689224 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Materials/1900 doom style wooden dungeon floor/albedo.png
+  artifactKey: Guid(8f31713670e6c324a9749cda121f95f8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/1900 doom style wooden dungeon floor/albedo.png using Guid(8f31713670e6c324a9749cda121f95f8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7dca650527143215b876dbe547255f60') in 0.0982513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/MedievalTavernPack/Material
+  artifactKey: Guid(916cebae0a363b14cbe2dd61ea0fa062) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material using Guid(916cebae0a363b14cbe2dd61ea0fa062) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a0be1bb32482a8e0ab0969db11255737') in 0.0542123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Laterns and candles/textures/Glass2 [Normal].png
+  artifactKey: Guid(fe2ad94daa0a12a4da4b1068441f64a9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/Glass2 [Normal].png using Guid(fe2ad94daa0a12a4da4b1068441f64a9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4f1edaa5bda8aae23d076c7240b7f810') in 0.0825031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Architecture/Window_01.prefab
+  artifactKey: Guid(764bece23ecf6b84d9eb3cfff40941f7) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/MedievalTavernPack/Prefabs/Architecture/Window_01.prefab using Guid(764bece23ecf6b84d9eb3cfff40941f7) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '83889edbef50cf023e38408476879dd1') in 0.0644627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MedievalTavernPack/Textures/Ornaments/axe_01_NORMAL.png
+  artifactKey: Guid(81fdcfc1baf0c0741b105e34c82b75cf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Ornaments/axe_01_NORMAL.png using Guid(81fdcfc1baf0c0741b105e34c82b75cf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7f7e6e95d183ec1c26853fa59977b66f') in 0.0964184 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/MedievalTavernPack/Material/Furniture/Stool_02.mat
+  artifactKey: Guid(ef48d7769a2dd784d8a55fbf8b6f591a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Furniture/Stool_02.mat using Guid(ef48d7769a2dd784d8a55fbf8b6f591a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ca1c7fe3a7f09cd8fa191a410918dc92') in 0.0894804 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/MedievalTavernPack/Material/Furniture/Cupboard_02.mat
+  artifactKey: Guid(2d3cf2905cce9f542aba50277cc27028) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Furniture/Cupboard_02.mat using Guid(2d3cf2905cce9f542aba50277cc27028) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '64b7b479a554b1076424ee680ea9af84') in 0.1486018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MedievalTavernPack/Meshes/Furniture/table_02.FBX
+  artifactKey: Guid(f6dd5e5cfe089754b873438202b01fd6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Meshes/Furniture/table_02.FBX using Guid(f6dd5e5cfe089754b873438202b01fd6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ccdcebfe464d439fe31056cf90b0111a') in 0.0400613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MedievalTavernPack/Textures/Furniture/table_02_NORMAL.png
+  artifactKey: Guid(613e9e31d49f0cb4f953acc92fad18cb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Furniture/table_02_NORMAL.png using Guid(613e9e31d49f0cb4f953acc92fad18cb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f9f6e4a9dcef196705da426a282c39fd') in 0.0911656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Laterns and candles/textures/CarvedLampPost [Albedo].png
+  artifactKey: Guid(fe360e8cd6fb08f4db6a59a22161a60c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/CarvedLampPost [Albedo].png using Guid(fe360e8cd6fb08f4db6a59a22161a60c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '771be35561f389a76bc1094f71edfd4d') in 0.0509445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/fireplace_02_cast_ALBEDO.png
+  artifactKey: Guid(537f5b0ea0d2a2a44a0b504eb40d4afa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/fireplace_02_cast_ALBEDO.png using Guid(537f5b0ea0d2a2a44a0b504eb40d4afa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b829d0c5078d10a1b2cd64a4e398afd8') in 0.0439556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/MedievalTavernPack/Meshes
+  artifactKey: Guid(1bd559b481d35cc40aafee852a0a4dd0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Meshes using Guid(1bd559b481d35cc40aafee852a0a4dd0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '135fc890beaea376beb40b73848117c5') in 0.0377453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Laterns and candles/textures/Latern2 [Albedo].png
+  artifactKey: Guid(81d417afa0a09af4eb65f1415a4547b6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/Latern2 [Albedo].png using Guid(81d417afa0a09af4eb65f1415a4547b6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '008dabbad76d09f49b262fa91987c0c5') in 0.0839369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/fireplace_01_stone_NORMAL.png
+  artifactKey: Guid(11c0d2b90a0f2e04b9a9921558621442) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/fireplace_01_stone_NORMAL.png using Guid(11c0d2b90a0f2e04b9a9921558621442) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec41689602a0fb7b0c9c6a10457f726f') in 0.1241082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/scripts/PlayerMovementTutorial (1).cs
+  artifactKey: Guid(be9ab02384dd72340a5a887ec66100eb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/scripts/PlayerMovementTutorial (1).cs using Guid(be9ab02384dd72340a5a887ec66100eb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '375f312e9208bb9055325b4d33b210ed') in 0.0675383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Materials/1900 doom style wooden dungeon floor/displacement.png
+  artifactKey: Guid(fff5eb06c1328d248ae9dc8101ebdc40) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/1900 doom style wooden dungeon floor/displacement.png using Guid(fff5eb06c1328d248ae9dc8101ebdc40) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e20348113693d9641e9f50866aa5f7e5') in 0.0479331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Laterns and candles/Sprites/green_flame.anim
+  artifactKey: Guid(35b65d803db138842a4f1be33587fc69) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Sprites/green_flame.anim using Guid(35b65d803db138842a4f1be33587fc69) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3c1dd9c9c9ce502f9d9401a92a8cbf54') in 0.0256488 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Laterns and candles/textures/Glass3 [Albedo].psd
+  artifactKey: Guid(bb8a24cf1ddf7e34c90620135691cd58) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/Glass3 [Albedo].psd using Guid(bb8a24cf1ddf7e34c90620135691cd58) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '05d2f55264e33b451749a7f6d0d6a13b') in 0.03989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Laterns and candles/textures/Candle emission_blue.png
+  artifactKey: Guid(73e66a3a2209d5443816b0ba7adf9025) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/Candle emission_blue.png using Guid(73e66a3a2209d5443816b0ba7adf9025) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '78e25ade423fd0cea817c7d5017c799c') in 0.0929651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/MedievalTavernPack/Meshes/Ornaments/shield_01.FBX
+  artifactKey: Guid(9ddf028af1fa1714489962e5dab4a416) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Meshes/Ornaments/shield_01.FBX using Guid(9ddf028af1fa1714489962e5dab4a416) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '28d6f5937f56d032c3c895f64c432870') in 0.0339718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laterns and candles/textures/CarvedLampPost2 [Albedo].png
+  artifactKey: Guid(1f35c83ac2332574aae42ce893a0d133) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/CarvedLampPost2 [Albedo].png using Guid(1f35c83ac2332574aae42ce893a0d133) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b25105cddbe9448f4fd2b9a99a7bcb18') in 0.026724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Architecture/Door_01.prefab
+  artifactKey: Guid(27edac8249b589c43b0f1ed822a98d39) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Prefabs/Architecture/Door_01.prefab using Guid(27edac8249b589c43b0f1ed822a98d39) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8dd169767e569f1d34a297606f34fb04') in 0.2428235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MedievalTavernPack/Prefabs/Architecture/Wall_window_02_cast.prefab
+  artifactKey: Guid(d05711d130d0f9248a255cbdb806d558) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Prefabs/Architecture/Wall_window_02_cast.prefab using Guid(d05711d130d0f9248a255cbdb806d558) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5a61ef78b7ba535e21352f017e23c767') in 0.0480491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/MedievalTavernPack/Textures/Architecture/window_glass_01_ALBEDO.png
+  artifactKey: Guid(f513d62bab3895e4298b2219e85b890a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Architecture/window_glass_01_ALBEDO.png using Guid(f513d62bab3895e4298b2219e85b890a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4dc2b3f00bbbff7b19653a5780f3de30') in 0.0483504 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Laterns and candles/Sprites/red_flame.anim
+  artifactKey: Guid(18abc88104ccebd4d81e5bcf9bd8e5d0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Sprites/red_flame.anim using Guid(18abc88104ccebd4d81e5bcf9bd8e5d0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0f5403425b7f590606f1ca0054cd040f') in 0.0209297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Laterns and candles/Meshes/Latern4.fbx
+  artifactKey: Guid(66dd512dabeec684ab0f4b135d4a43ce) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Meshes/Latern4.fbx using Guid(66dd512dabeec684ab0f4b135d4a43ce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '09ff8d936f1b067a0a0e3a6c3b79ec1f') in 0.115545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Hocker/Worn wooden crate/Box
+  artifactKey: Guid(04ee68c1a946686459eeac2c69c0e04c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Hocker/Worn wooden crate/Box using Guid(04ee68c1a946686459eeac2c69c0e04c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '96ebfa3ae4464c7bb318b6614530b3f7') in 0.0321833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity
+  artifactKey: Guid(5fe2257128d9401fad0790f581dc8a6f) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity using Guid(5fe2257128d9401fad0790f581dc8a6f) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Opening scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity additively'
+Loaded scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity'
+	Deserialize:            33.339 ms
+	Integration:            4.163 ms
+	Integration of assets:  0.846 ms
+	Thread Wait Time:       0.002 ms
+	Total Operation Time:   38.350 ms
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '03e48aa8242dd6cc6943ad9d4232a965') in 0.0576193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MedievalTavernPack/Material/Architecture/Fireplace_02_stone.mat
+  artifactKey: Guid(7e91e8346e8449544b8aaf17bd477f74) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Architecture/Fireplace_02_stone.mat using Guid(7e91e8346e8449544b8aaf17bd477f74) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5a113ae56f70735c29e094cd28292809') in 0.1479823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Materials/wooden tavern ceiling/albedo.png
+  artifactKey: Guid(c6af484b42bbe694383436a5f989311f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/wooden tavern ceiling/albedo.png using Guid(c6af484b42bbe694383436a5f989311f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c2346b75b6c4602755e48448ffcad47b') in 0.0500053 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/MedievalTavernPack/Textures/Furniture/cupboard_01_NORMAL.png
+  artifactKey: Guid(29524dadbec84134faeaf85a0e08529f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Furniture/cupboard_01_NORMAL.png using Guid(29524dadbec84134faeaf85a0e08529f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd79fc75d666eeebcf428b9ab94912870') in 0.0367115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/MedievalTavernPack/Meshes/Ornaments
+  artifactKey: Guid(189ec0bc446e5c14b874b0dfeb166548) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Meshes/Ornaments using Guid(189ec0bc446e5c14b874b0dfeb166548) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dcb7ec38612665b4264126b25b3a869f') in 0.0243383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Laterns and candles/textures/Candle2 blueemission.png
+  artifactKey: Guid(e5ac39a1629538847b64e266fbaf8a9d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/textures/Candle2 blueemission.png using Guid(e5ac39a1629538847b64e266fbaf8a9d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9a3257ee266716c384b9dbe436d1fe7d') in 0.0417398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/MedievalTavernPack/Textures/Furniture/cupboard_02_ALBEDO.png
+  artifactKey: Guid(9487ab6facdf5734abf49fb768bf1c84) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Textures/Furniture/cupboard_02_ALBEDO.png using Guid(9487ab6facdf5734abf49fb768bf1c84) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd794751840e47e6481952d1e4b4acd1d') in 0.0398406 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Laterns and candles/Materials/Flame.mat
+  artifactKey: Guid(b89178c9821ece842b4a7a4fed42d77e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Materials/Flame.mat using Guid(b89178c9821ece842b4a7a4fed42d77e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9192711550b613e05b3af79c2947d1b5') in 0.2159254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '321f05735275e5c48413b896c4ab41d0') in 0.0386031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9fcd0c7abc0c28729ab0329f5a17e133') in 0.021829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab
+  artifactKey: Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab using Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'abf113dd4ebfc9157acd40cc8abace28') in 0.1151745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+  artifactKey: Guid(686ec78b56aa445795335fbadafcfaa4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs using Guid(686ec78b56aa445795335fbadafcfaa4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '39bf0d9bb003b92157b310e55bf1ba86') in 0.0226637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets
+  artifactKey: Guid(512a49d95c0c4332bdd98131869c23c9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets using Guid(512a49d95c0c4332bdd98131869c23c9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5bd3320dd26c9a1dd58ca14b364cbb2b') in 0.0176743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png
+  artifactKey: Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png using Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c649b42013158b0628e9aea8d47529d0') in 0.056021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/MedievalTavernPack/Material/Ornaments/Shield_01.mat
+  artifactKey: Guid(5f536f82d19831643a03184ce889a8dc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MedievalTavernPack/Material/Ornaments/Shield_01.mat using Guid(5f536f82d19831643a03184ce889a8dc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9ca37c4157e50ba9206cc3948e47ba50') in 0.0485849 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Laterns and candles/Meshes/Latern5.fbx
+  artifactKey: Guid(92a5a5383e624784da2627a47a052328) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Laterns and candles/Meshes/Latern5.fbx using Guid(92a5a5383e624784da2627a47a052328) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '23fb7645f42a7d946f5a63f16a49f9a8') in 0.0381905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/hit effect 1.prefab
+  artifactKey: Guid(1866d1ea4cd449c438434713859fe432) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/Prefabs/hit effect 1.prefab using Guid(1866d1ea4cd449c438434713859fe432) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '90b44ca0ca9b3a39cbe57d6d9bb0d472') in 0.0449626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '55bfa867edb16c61966783dcac1a509f') in 0.0889118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs
+  artifactKey: Guid(2ed57967c52645d390a89dcf8f61ba73) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs using Guid(2ed57967c52645d390a89dcf8f61ba73) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7534ae9e61f9a6b52cca18ccce76377a') in 0.0322044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd
+  artifactKey: Guid(10c49fcd9c64421db7c0133e61e55f97) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd using Guid(10c49fcd9c64421db7c0133e61e55f97) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '90c32e4698f51e4e56f37369299281af') in 0.0413135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Bloom.mat
+  artifactKey: Guid(8d176c01131de8f46ad61094e29d79b2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Bloom.mat using Guid(8d176c01131de8f46ad61094e29d79b2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c62c8a47800c743a0460ab6e205bc967') in 0.0513609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs
+  artifactKey: Guid(1a7eb92a01ed499a987bde9def05fbce) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs using Guid(1a7eb92a01ed499a987bde9def05fbce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bab15e77b2cc813ef903805e94fc30cd') in 0.0212866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat
+  artifactKey: Guid(c719e38f25a9480abd2480ab621a2949) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat using Guid(c719e38f25a9480abd2480ab621a2949) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '108bcc1a6454dd86e1b13def3872a7eb') in 0.0290296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b7be4e99d86cfbd2a5d27a00b2a7c474') in 0.0327416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity
+  artifactKey: Guid(39a1fa96ad2a449b908fca29d4297a74) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity using Guid(39a1fa96ad2a449b908fca29d4297a74) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) (ScriptedImporter)Opening scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity additively'
+Loaded scene 'Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity'
+	Deserialize:            23.076 ms
+	Integration:            3.490 ms
+	Integration of assets:  0.670 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   27.243 ms
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a05f062ac1657c120de023a6c2f35715') in 0.0493554 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036226 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd
+  artifactKey: Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd using Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '592c77c41dbbe4ce8f81c6e0ea18f1e4') in 0.0558051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/ItemAnimation.cs
+  artifactKey: Guid(0ba04ea25cd62ee4e8b3e182796afbe5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/ItemAnimation.cs using Guid(0ba04ea25cd62ee4e8b3e182796afbe5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c8faac111f7b8b641fee6be0da31ac08') in 0.0252632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png
+  artifactKey: Guid(c76d18757a194d618355f05f815cb0a1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png using Guid(c76d18757a194d618355f05f815cb0a1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0ec08b384e81584fe6328a1f2636692f') in 0.0673671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials
+  artifactKey: Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials using Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e0e13ad375ab55a613bdc75f103d9952') in 0.0243774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7748119e2ecf42e9ea59a3968369f717') in 0.0341373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity
+  artifactKey: Guid(8c4969fd8ba94a68b07cf11f3e7a5137) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity using Guid(8c4969fd8ba94a68b07cf11f3e7a5137) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c3a6b2f027557fc0f76fbc5cfa3b5b82') in 0.0418354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Realistic_bloody_pumping_magical_human_heart_02261604_fbx/Materials/texture_0.mat
+  artifactKey: Guid(8b8fe8c04f6c0cf46820f2e55cd22aef) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Realistic_bloody_pumping_magical_human_heart_02261604_fbx/Materials/texture_0.mat using Guid(8b8fe8c04f6c0cf46820f2e55cd22aef) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ca135e0c58c19e3b3c03d2c7924b6858') in 0.0447056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity
+  artifactKey: Guid(22a2fba786ad4c40ac0ba09f0b933100) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity using Guid(22a2fba786ad4c40ac0ba09f0b933100) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '216b30076770ecdd535154b5ae20be04') in 0.0313655 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/scripts/black fabric, seamless 4k texture/roughness.png
+  artifactKey: Guid(c2ee2e46fdf78b44bbca19cafb64afa9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/scripts/black fabric, seamless 4k texture/roughness.png using Guid(c2ee2e46fdf78b44bbca19cafb64afa9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a8e3453e7ce99f6ac75f353f2bc3f269') in 0.0430525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs
+  artifactKey: Guid(a05dcd8be7ec4ccbb35c26219884aa37) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs using Guid(a05dcd8be7ec4ccbb35c26219884aa37) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8043c6a9551e0ed3abac554075f1401b') in 0.021455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow - 2 Pass.mat
+  artifactKey: Guid(947a44964e53bf0448ff698b2a2219c0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow - 2 Pass.mat using Guid(947a44964e53bf0448ff698b2a2219c0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b430f9c13b1522b0f201e6a0b185121c') in 0.0205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 72 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (2.6 MB). Loaded Objects now: 6112.
+Memory consumption went from 130.8 MB to 128.2 MB.
+Total: 51.038400 ms (FindLiveObjects: 0.747700 ms CreateObjectMapping: 0.191800 ms MarkObjects: 47.484200 ms  DeleteObjects: 2.612900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (2.6 MB). Loaded Objects now: 6114.
+Memory consumption went from 126.9 MB to 124.3 MB.
+Total: 24.737800 ms (FindLiveObjects: 0.749600 ms CreateObjectMapping: 0.189400 ms MarkObjects: 22.347900 ms  DeleteObjects: 1.449100 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+Editor requested this worker to shutdown with reason: balancing worker count downwards
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

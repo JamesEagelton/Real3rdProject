@@ -14,11 +14,14 @@ scopes = {
 	"last_search.98CF4AA6" = ""
 	"OpenInspectorPreview.98CF4AA6" = "0"
 	"currentGroup.98CF4AA6" = "scene"
-	"picker_window_position_offset.0B486DF2" = "261;32;320;550"
+	"picker_window_position_offset.0B486DF2" = "206;32;320;550"
 	"picker_search_text.0B486DF2" = ""
 	"last_search.0B486DF2" = ""
 	"OpenInspectorPreview.0B486DF2" = "0"
 	"currentGroup.0B486DF2" = null
+	"last_search.5A656512" = "ref=\"/environment/main room/ceiling chain (4)\""
+	"OpenInspectorPreview.5A656512" = "0"
+	"currentGroup.5A656512" = null
 }
 providers = {
 	performance = {
