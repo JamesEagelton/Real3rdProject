@@ -12,6 +12,11 @@ public class TimeModify : MonoBehaviour
     public scorescript score;
     public GameObject canvas;
     bool death = false;
+    public GameObject handscamera;
+    public GameObject deathscreen;
+    public Animator deathanimation;
+    
+
     
     public void SetTimeScale(float Scale) 
     { 
@@ -43,8 +48,16 @@ public class TimeModify : MonoBehaviour
         if (death == true)
         {
             canvas.SetActive(false);
+            handscamera.SetActive(false);
+            deathanimation.SetBool("isdead", true);
             starttime = Mathf.Lerp(starttime, 0f, 0.1f);
             SetTimeScale(starttime);
+            deathscreen.SetActive(true);
+            
+        }
+
+        if(starttime <= 0f) 
+        {
             
         }
     }
