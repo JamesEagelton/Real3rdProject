@@ -28,7 +28,7 @@ public class scorescript : MonoBehaviour
         scorebar.value = scorebar.value - scoredecay;
         
 
-        if (scorebar.value < 200 || scorebar.value > 800) 
+        if (scorebar.value <= 0 || scorebar.value >= 1000) 
         {
             playerhealth--;
             scorebar.value = originalscore;

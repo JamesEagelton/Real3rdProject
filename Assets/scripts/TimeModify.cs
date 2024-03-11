@@ -43,7 +43,7 @@ public class TimeModify : MonoBehaviour
         if (death == true)
         {
             canvas.SetActive(false);
-            starttime = Mathf.Lerp(starttime, 0f, 0.1f);
+            starttime = Mathf.Lerp(starttime, 0.1f, 0.1f);
             SetTimeScale(starttime);
             
         }

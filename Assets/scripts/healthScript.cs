@@ -13,6 +13,8 @@ public class healthScript : MonoBehaviour
     public GameObject heart2;
     public GameObject heart3;
     public  Animator[] animator;
+    
+    
 
     private void Start()
     {
@@ -30,6 +32,8 @@ public class healthScript : MonoBehaviour
         { 
             case 0:
                 Destroy(heart1);
+                
+               
                 break;
             case 1:
                 Destroy(heart2);
