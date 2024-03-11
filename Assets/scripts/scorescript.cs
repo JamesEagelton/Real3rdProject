@@ -8,6 +8,7 @@ public class scorescript : MonoBehaviour
 {
     // Start is called before the first frame update
     public Slider scorebar;
+    public bool tutorialComplete = false; 
    
     public float scoredecay;
     public int playerhealth = 3;
@@ -24,9 +25,12 @@ public class scorescript : MonoBehaviour
 
     void Update()
     {
+        if (tutorialComplete == true)
+        {
 
         scorebar.value = scorebar.value - scoredecay;
         
+        }
 
         if (scorebar.value <= 0 || scorebar.value >= 1000) 
         {
