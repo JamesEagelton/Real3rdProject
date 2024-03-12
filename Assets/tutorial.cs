@@ -7,58 +7,54 @@ using UnityEngine.UI;
 
 public class tutorial : MonoBehaviour
 {
-    public int tutorialPart = 1;
-    public Text clickTutorialText;
-    public Text scoreTutorialText;
-    public float textcooldown;
 
+    public string[] texts;
+    public float clickCooldown = 1;
+    public Text text;
 
-    // Update is called once per frame
+    private int currentIndex = 0;
+    private bool cooldown = true;
+    private bool dialogueBegun = true;
 
-    void  scoreTextCoolDown()
-    { 
-    
-      scoreTutorialText.text = "IF THE SCORE REACHES 0 OR 1000, THEN 1 HEART WILL BE REMOVED";
-
-    }
-    
-    
-    
-    void Update()
+    void Start()
     {
 
-        switch (tutorialPart)
-        { 
-            case 1:
-                clickTutorialText.text = "CLICK TO SHOOT";
-                if (Input.GetMouseButtonDown(0)) 
-                { 
-                    tutorialPart = 2;
+    }
+
+
+    void Update()
+    {
+        if (cooldown && dialogueBegun)
+        {
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+            {
+                CooldownStart();
+                if (currentIndex < texts.Length)
+                {
+                    Dialogue();
+                    if (currentIndex >= texts.Length)
+                    {
+                        Debug.Log("Dialogue 1 end");
+                    }
                 }
-                break;
-            case 2:
-                clickTutorialText.text = "";
-              
-                
-                scoreTutorialText.text = "AS THE GAME PROGRESSES, THE SCORE WILL GO DOWN";
-
-                Invoke(scoreTextCoolDown(), textcooldown);
-              
-                  
-               
-                
-                break;
-
-
-
-            default:
-                break;
+            }
         }
-    
-    
-         
-        
-        
-    
+    }
+    private void Dialogue()
+    {
+        text.text = texts[currentIndex];
+        Debug.Log("Im GOING TO HANG MYSELF");
+        currentIndex++;
+    }
+
+    void CooldownStart()
+    {
+        StartCoroutine(CooldownCoroutine());
+    }
+    IEnumerator CooldownCoroutine()
+    {
+        cooldown = false;
+        yield return new WaitForSeconds(clickCooldown);
+        cooldown = true;
     }
 }
