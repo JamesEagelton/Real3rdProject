@@ -14,7 +14,11 @@ LightingSettings:
   m_BounceScale: 1
   m_AlbedoBoost: 1.58
   m_IndirectOutputScale: 1.22
+<<<<<<< HEAD
   m_UsingShadowmask: 0
+=======
+  m_UsingShadowmask: 1
+>>>>>>> 3acfde25a45229d53a7cad45975aa0b9dfb0752e
   m_BakeBackend: 2
   m_LightmapMaxSize: 4096
   m_LightmapSizeFixed: 0
