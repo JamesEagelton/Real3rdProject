@@ -42,6 +42,7 @@ public class PlayerMovementTutorial : MonoBehaviour
     public Camera  maincamera;
 
     public AudioSource beamnoise;
+    public scorescript score;
     
 
     private void Start()
@@ -75,6 +76,17 @@ public class PlayerMovementTutorial : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+    }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.gameObject.tag == ("enemy")) 
+        {
+            score.playerhealth = score.playerhealth - 1;
+        }
+    
     }
 
     private void MyInput()
@@ -161,9 +173,13 @@ public class PlayerMovementTutorial : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Debug.Log("Im looking at " + hit.transform.name);
-            if (hit.transform.tag == "enemy")
+            if (hit.transform.CompareTag("enemy"))
             {
-                hit.transform.parent.GetComponent<enemycontroller>().takedamage();
+                enemycontroller enemycont = hit.transform.parent.GetComponent<enemycontroller>();
+                if (enemycont != null)
+                {
+                    enemycont.takedamage();
+                }
                 GetComponent<AudioSource>().Stop();
                 GetComponent<AudioSource>().Play();
 

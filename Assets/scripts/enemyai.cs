@@ -9,9 +9,9 @@ public class enemyai : MonoBehaviour
     private Transform playersTransform;
     private NavMeshAgent enemynavMeshAgent;
 
-   
-    
-    
+
+
+    public scorescript scorescript;
     
     private void Start()
     {
@@ -23,7 +23,7 @@ public class enemyai : MonoBehaviour
     private void Update()
     {
         
-        if (enemyawareness.isAggro == true) 
+        if (enemyawareness.isAggro == true && scorescript.tutorialComplete == true) 
         { 
           enemynavMeshAgent.SetDestination(playersTransform.position);
         }
